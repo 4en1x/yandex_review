@@ -20,3 +20,5 @@ class UserInfo {
 }
 
 export default UserInfo;
+
+//  все отлично

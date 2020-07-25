@@ -10,6 +10,7 @@ class Popup {
   _handleEscClose(e) {
     e.preventDefault();
     if (isEscButton(e)) {
+      /* Нужно исправить: метод  this.close не принимает никаких аргументов */
       this.close(this._element);
     }
   }
