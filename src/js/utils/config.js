@@ -8,3 +8,5 @@ export const defaultFormConfig = {
   inputErrorClass: CLASSES.POPUP_INPUT_ERROR,
   errorClass: CLASSES.POPUP_ERROR,
 };
+
+// отличное решение

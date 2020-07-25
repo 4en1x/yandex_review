@@ -34,6 +34,9 @@ module.exports = {
         loader: 'html-loader',
       },
       {
+        /* Можно лучше: RegExp позволяет указывать опциональные символы в шаблоне
+        с помощью знака ?, чтобы не хардкодить woff и woff2, а также
+        чтобы учесть букву Е в jpEg */
         test: /\.(woff|woff2|ttf|png|svg|jpg|gif)$/,
         loader: 'file-loader'
       },
@@ -46,3 +49,6 @@ module.exports = {
     new MiniCssExtractPlugin()
   ]
 };
+
+/* Надо исправить: нет babel.config.js в корневой папке,
+в нем нужно указать, под какие браузеры код транспилировать */

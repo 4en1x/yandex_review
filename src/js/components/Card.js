@@ -39,6 +39,9 @@ class Card {
   }
 
   _handlePreviewPicture() {
+    /* Можно лучше: в классе Card в конструктор поступает колбэк-функция handleCardClick,
+      и ее можно было вообще без аргументов сделать, ведь "data" в конструкторе будет
+      равно "data" в колбэке и в showCardImageModal.open(data) в index.js*/
     this._handleCardClick({
       link: this._link,
       text: this._text,
